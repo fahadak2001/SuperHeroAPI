@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+body {
+    background-color: rgb(36, 36, 36);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust the gap between cards */
+    padding: 0 35px; /* Adjust the padding from the left and right */
+    margin-top: 50px; /* Adjust the top margin if needed */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.card-body{
+    height: 28rem; /* Initial height */
+    overflow: hidden; /* Hide overflow content */
+    transition: width 0.5s, height 0.5s; /* Smooth transition */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card {
+    width: 18rem;
+    overflow: hidden; /* Hide overflowing content */
+    transition: width 0.5s; /* Smooth transition for width change */
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.card:hover {
+    width: calc(18rem + 800px); /* Expand the card width upon hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name{
+    position: absolute; /* Position name absolutely */
+    top: 0;
+    background-color: rgba(36, 36, 36, 0.7); /* Semi-transparent background */
+    color: white; /* Text color */
+    padding: 10px; /* Adjust padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+    opacity: 0; /* Initially hide the name */
+    transition: opacity 0.5s; 
+}
+
+.name1{
+    position: absolute; /* Position name absolutely */
+    top: 0;
+    background-color: rgba(36, 36, 36, 0.7); /* Semi-transparent background */
+    color: white; /* Text color */
+    padding: 10px; /* Adjust padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+    opacity: 1; /* Initially hide the name */
+    transition: opacity 0.5s; 
+}
+
+
+.card:hover .name{
+    opacity: 1;
+}
+
+.card:hover .card-body {
+    width: 100%;
 }
