@@ -1,7 +1,12 @@
 # Getting Started with Create React App
 
 *Link To Preview*
-https://superheroapii.netlify.app/
+https://superheroapii.netlify.app/ (ENABLE CORS EXTENSTION TO VIEW)
+
+
+
+https://github.com/fahadak2001/SuperHeroAPI/assets/61794596/355aad1f-4cb8-49fa-be41-4626d7be1ff9
+
 
 
 
